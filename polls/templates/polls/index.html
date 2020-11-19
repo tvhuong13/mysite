@@ -1,0 +1,14 @@
+{% extends 'polls/base.html' %}
+
+{% block content123 %}
+    <h1> đây là template </h1>
+    <p> chào các bạn mình là <b> <u> <i> {{name}} </i> </u> </b> </p>
+    <h2> đây là tài sản của <b> <u> <i> {{name}} </i> </u> </b> </h2>>
+<ul>
+    {% for item in taisan %}
+        {% if item != 'nhiều tiền' %}
+            <li>{{ item }}</li>
+        {% endif %}
+    {% endfor %}
+</ul>
+{% endblock %}

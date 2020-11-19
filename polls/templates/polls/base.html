@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'polls/style.css' %}">
+</head>
+<body>
+<div class="header">
+    <h1>My website </h1>
+
+</div>
+<div class="menu">
+    <ul>
+        <li> link 1</li>
+        <li> link 2 </li>
+        <li> link 3 </li>
+        <li> link 4 </li>
+    </ul>
+</div>
+<div class="noidung">
+    {% block content123 %}
+    {% endblock %}
+</div>
+
+</body>
+</html>
